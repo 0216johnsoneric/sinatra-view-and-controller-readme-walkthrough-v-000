@@ -10,7 +10,7 @@ class App < Sinatra::Base
   post '/reversed' do
     original_string = params[:string].reverse
     @reversed_string = original_string
-
+    binding.pry
     erb :reversed
   end
 
