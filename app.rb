@@ -4,7 +4,7 @@ class App < Sinatra::Base
 
 
   post '/reverse' do
-    @reverse = params[:reverse]
+    @last_response = params[:reverse]
     erb :reverse
   end
 
